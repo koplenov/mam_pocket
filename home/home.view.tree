@@ -1,0 +1,12 @@
+$pocket_home $mol_view
+	sub / <= page $mol_list
+		rows /
+			<= Today $mol_text text <= today \Today
+			<= Content $mol_button 
+				event_click?val <= openWeather null
+				sub /
+					<= City $mol_text text <= city \City
+					<= Temp $mol_text text <= temp \Temp°
+			<= Weather $mol_text text <= weather \Солнечно
+			<= Week $mol_text text <= calculateWeek \s
+			<= PoweredBy $mol_text text \powered by @koplenov

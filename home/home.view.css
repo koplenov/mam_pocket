@@ -1,0 +1,42 @@
+[pocket_home]{
+  width:100%;
+  max-width:100%;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  background: #1810107d;
+}
+
+[pocket_home_city]{
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(207, 207, 207, 0.616);
+}
+
+[pocket_home_temp]{
+	margin-top: -1rem;
+	width:60%;
+	font-size: 3rem;
+	font-weight: bold;
+	color: rgba(213, 213, 213, 0.9);
+	font-weight: 100;
+	align-items: flex-end;
+}
+[pocket_home_week]{
+	margin-top: -1rem;
+	color: rgba(213, 213, 213, 0.9);
+}
+
+[pocket_home_today]{
+	color: rgba(213, 213, 213, 0.502);
+}
+
+[pocket_home_poweredby]{
+	margin-top: -1rem;
+	color: rgba(213, 213, 213, 0.502);
+}
+
+[pocket_home_weather]{
+	margin-top: -2.5rem;
+	color: rgba(213, 213, 213, 0.502);
+}
