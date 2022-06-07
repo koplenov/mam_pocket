@@ -7788,7 +7788,7 @@ var $;
                 window.open('https://yandex.ru/pogoda/');
             }
             weather() {
-                return this.loadData().current_condition[0].lang_ru[0].value;
+                return this.loadData().current_condition[0].uvIndex + " | " + this.loadData().current_condition[0].lang_ru[0].value;
             }
             calculateWeek() {
                 const data = new Date();
@@ -7812,7 +7812,7 @@ var $;
                 return this.loadData().nearest_area[0].areaName[0].value;
             }
             temp() {
-                return this.loadData().current_condition[0].temp_C + '°';
+                return this.loadData().current_condition[0].temp_C + '/' + this.loadData().current_condition[0].FeelsLikeC + '°';
             }
         }
         __decorate([
