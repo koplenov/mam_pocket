@@ -18,7 +18,7 @@ namespace $.$$ {
 		}
 
 		weather(){
-			return this.loadData().current_condition[0].lang_ru[0].value
+			return this.loadData().current_condition[0].uvIndex + " | " + this.loadData().current_condition[0].lang_ru[0].value
 		}
 
 		calculateWeek(){
@@ -45,7 +45,7 @@ namespace $.$$ {
 		}
 
 		temp(){
-			return this.loadData().current_condition[0].temp_C + '°'
+			return this.loadData().current_condition[0].temp_C + '/' + this.loadData().current_condition[0].FeelsLikeC + '°'
 		}
 	}
 
