@@ -4,6 +4,7 @@
   font-family: 'Roboto', sans-serif;
   overflow: hidden;
   background: #1810107d;
+  backdrop-filter: blur(5px);
 }
 
 [pocket_home_city]{
@@ -29,6 +30,7 @@
 
 [pocket_home_today]{
 	color: rgba(213, 213, 213, 0.502);
+	height: 1.6rem;
 }
 
 [pocket_home_poweredby]{
