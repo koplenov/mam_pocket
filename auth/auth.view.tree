@@ -1,0 +1,19 @@
+$pocket_auth $mol_page
+	title \Auth page
+	plugins / <= Theme $mol_theme_auto
+	tools / <= theme_toggle $mol_lights_toggle
+	body /
+		<= Aftch $mol_list
+			rows /
+				<= Login_text $mol_text
+					text \Enter username
+				<= Login_string $mol_string
+				<= Password_text $mol_text
+					text \Enter password
+				<= Password_string $mol_password
+				<= Login_button_m $mol_button_minor
+					title \Login
+					event_click?val <=> login_button?val null
+	foot /
+		<= Footer_text $mol_text
+			text <= footer_text \(c) Set |`footer_text` \value| or |`Footer_text null`| for hide
